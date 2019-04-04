@@ -13,6 +13,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 70vh;
+  text-align: center;
 `
 
 const StyledLink = styled(Link)`
@@ -43,14 +44,16 @@ const StyledLink = styled(Link)`
       inset 0 2px 1px RGBA(68, 142, 199, 1);
   }
 `
-export default ({ location }) => (
-  <Layout>
-    <Container>
-      <div className="text-wrapper">
-        <h1>Thanks, {location.state.name}! 🎉</h1>
-        <h3>We will be in touch shortly!</h3>
-      </div>
-      <StyledLink to="/">Back Home</StyledLink>
-    </Container>
-  </Layout>
-)
+export default ({ location }) => {
+  return (
+    <Layout>
+      <Container>
+        <div className="text-wrapper">
+          <h1>Thanks! 🎉</h1>
+          <h3>We will be in touch shortly!</h3>
+        </div>
+        <StyledLink to="/">Back Home</StyledLink>
+      </Container>
+    </Layout>
+  )
+}
