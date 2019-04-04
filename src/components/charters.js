@@ -1,12 +1,22 @@
 import React from "react"
+import styled from "styled-components"
 import Card from "./card"
 import groundCharterImage from "../images/big-tuna-fishing.jpg"
 import bassCharterImage from "../images/darkhorse-docked.jpg"
 import tunaCharterImage from "../images/tuna-brothers.jpg"
 import privateCharterImage from "../images/darkhorse-fishing-tuna.jpg"
+
+const Wrapper = styled.section`
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+`
+
 const Charters = () => {
   return (
-    <div>
+    <Wrapper>
       <Card
         image={groundCharterImage}
         title={"Ground Fish Charters"}
@@ -43,7 +53,7 @@ const Charters = () => {
         text={`Hire the F/V Dark Horse and it’s professional crew for a day adventure of your choice (ferrying service, day trips to local attractions, trip to beach, or design a trip to fit your needs)
 				`}
       />
-    </div>
+    </Wrapper>
   )
 }
 

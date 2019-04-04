@@ -2,6 +2,8 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Img from "gatsby-image"
+import { render } from "react-dom"
+import Gallery from "react-photo-gallery"
 
 const GramWrapper = styled.div`
   text-align: center;
@@ -35,17 +37,29 @@ const Item = styled.div`
     box-shadow: 0 3px 5px 1px rgba(42, 42, 42, 0.4);
   }
 `
+function columns(containerWidth) {
+  let columns = 1
+  if (containerWidth >= 500) columns = 2
+  if (containerWidth >= 900) columns = 3
+  if (containerWidth >= 1500) columns = 4
+  return columns
+}
 
-const Gallery = () => (
+const WPGallery = () => (
   <StaticQuery
     query={graphql`
-      query {
-        allImageSharp {
+      query WordpressMedia2 {
+        wordpress: allWordpressWpMedia {
           edges {
             node {
               id
-              fluid(maxWidth: 600, maxHeight: 300) {
-                ...GatsbyImageSharpFluid
+              alt_text
+              localFile {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
               }
             }
           }
@@ -53,21 +67,24 @@ const Gallery = () => (
       }
     `}
     render={data => (
-      <GramWrapper>
-        <Grid>
-          {data.allImageSharp.edges.map(({ node }) => {
-            const pic = node.fluid
-            console.log(pic)
-            return (
-              <Item key={node.id}>
-                <Img fluid={pic} />
-              </Item>
-            )
-          })}
-        </Grid>
-      </GramWrapper>
+      // <GramWrapper>
+      //   <Grid>
+      <div>
+        {data.wordpress.edges.map(({ node }) => {
+          const pic = node.localFile.childImageSharp.fluid
+          const photos = node.localFile.console.log(pic)
+          return (
+            // <Item key={node.id}>
+            //   <Img fluid={pic} />
+            // </Item>
+            <Gallery photos={pic} columns={columns} />
+          )
+        })}
+      </div>
+      //   </Grid>
+      // </GramWrapper>
     )}
   />
 )
 
-export default Gallery
+export default WPGallery
