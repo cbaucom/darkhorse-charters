@@ -43,9 +43,7 @@ const FishBowl = () => {
             <div className="top" />
             <div className="boat-body" />
 
-            <div className="waves">
-              <img src="http://vysocina.xyz/a_waves.png" alt="waves" />
-            </div>
+            <div className="waves" />
           </div>
         </div>
 
