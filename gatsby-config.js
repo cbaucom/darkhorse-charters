@@ -34,18 +34,18 @@ module.exports = {
         prefix: `crbaucom-images/`,
       },
     },
-    {
-      resolve: `gatsby-source-wordpress`,
-      options: {
-        // your wordpress source
-        baseUrl: `darkhorsecharters.wordpress.com`,
-        protocol: `https`,
-        // is it hosted on wordpress.com, or self-hosted?
-        hostingWPCOM: true,
-        // does your site use the Advanced Custom Fields Plugin?
-        useACF: false,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-wordpress`,
+    //   options: {
+    //     // your wordpress source
+    //     baseUrl: `darkhorsecharters.wordpress.com`,
+    //     protocol: `https`,
+    //     // is it hosted on wordpress.com, or self-hosted?
+    //     hostingWPCOM: true,
+    //     // does your site use the Advanced Custom Fields Plugin?
+    //     useACF: false,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
