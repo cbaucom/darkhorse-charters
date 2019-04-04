@@ -5,6 +5,7 @@ import CardBody from "./card-body"
 
 const StyledCard = styled.article`
   flex: 0 0 350px;
+  background: #fff;
   margin: 10px auto;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   transition: 0.25s;
