@@ -1,5 +1,5 @@
 import React from "react"
-import Card from "./Card"
+import Card from "./card"
 import groundCharterImage from "../images/big-tuna-fishing.jpg"
 import bassCharterImage from "../images/darkhorse-docked.jpg"
 import tunaCharterImage from "../images/tuna-brothers.jpg"
