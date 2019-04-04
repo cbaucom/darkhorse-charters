@@ -71,7 +71,7 @@ const OurVessel = () => (
           </li>
           <li>9kw Northern light generator.</li>
           <li>
-            Highlights include large In deck fish hold, Ffreezer, picnic table,
+            Highlights include large In deck fish hold, freezer, picnic table,
             178 gallon live-well, and over 25 rod holders.
           </li>
           <li>

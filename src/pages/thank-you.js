@@ -45,15 +45,29 @@ const StyledLink = styled(Link)`
   }
 `
 export default ({ location }) => {
-  return (
-    <Layout>
-      <Container>
-        <div className="text-wrapper">
-          <h1>Thanks! 🎉</h1>
-          <h3>We will be in touch shortly!</h3>
-        </div>
-        <StyledLink to="/">Back Home</StyledLink>
-      </Container>
-    </Layout>
-  )
+  if (typeof window !== "undefined") {
+    return (
+      <Layout>
+        <Container>
+          <div className="text-wrapper">
+            <h1>Thanks, {location.state.name}! 🎉</h1>
+            <h3>We will be in touch shortly!</h3>
+          </div>
+          <StyledLink to="/">Back Home</StyledLink>
+        </Container>
+      </Layout>
+    )
+  } else {
+    return (
+      <Layout>
+        <Container>
+          <div className="text-wrapper">
+            <h1>Thanks! 🎉</h1>
+            <h3>We will be in touch shortly!</h3>
+          </div>
+          <StyledLink to="/">Back Home</StyledLink>
+        </Container>
+      </Layout>
+    )
+  }
 }
