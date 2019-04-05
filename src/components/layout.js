@@ -13,6 +13,8 @@ import styled from "styled-components"
 import "./layout.css"
 import Header from "./header-new"
 import Footer from "./footer"
+import { stack as Menu } from "react-burger-menu"
+import MenuDropdown from "./menu"
 
 const Wrapper = styled.div`
   background: #f6f6f6;
@@ -42,6 +44,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <div id="App">
+        <MenuDropdown />
         <Wrapper>
           <Header siteTitle={data.site.siteMetadata.title} />
           <Main>{children}</Main>

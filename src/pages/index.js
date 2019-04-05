@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import bigFish from "../images/big-tuna-fishing.jpg"
 import Instagram from "../components/instagram"
 import Charters from "../components/charters"
+import Container from "../components/styles/container"
 
 const CTAContainer = styled.section`
   display: flex;
@@ -92,7 +93,9 @@ const IndexPage = () => (
       <h2>Now accepting reservations for 2019 charters!</h2>
       <StyledLink to="/book-now">Book Now</StyledLink>
     </CTAContainer>
-    <Charters />
+    <Container>
+      <Charters />
+    </Container>
     <Instagram />
 
     <GoFishingContainer>

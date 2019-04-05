@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Dark Horse Charters`,
@@ -22,18 +26,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-source-cloudinary`,
-    //   options: {
-    //     cloudName: `crbaucom`,
-    //     apiKey: `767281128683257`,
-    //     apiSecret: `8q_EqT3Tgn3patdXxKrSHJLUNOo`,
-    //     maxResults: `500`,
-    //     type: `upload`,
-    //     resourceType: `image`,
-    //     prefix: `crbaucom-images/`,
-    //   },
-    // },
     {
       resolve: `gatsby-source-wordpress`,
       options: {
@@ -52,12 +44,10 @@ module.exports = {
           // If two-factor authentication is enabled then you need to create an Application-Specific Password,
           // see https://en.support.wordpress.com/security/two-step-authentication/#application-specific-passwords
           // wpcom_app_clientSecret: process.env.WORDPRESS_CLIENT_SECRET,
-          wpcom_app_clientSecret:
-            "V0stgjCe8srzTXy4BLnlnJ9KEHxiWV9kJamjinLlfBhrfCkxTo8i3mvGi9PUiBYT",
-          wpcom_app_clientId: "65266",
-          wpcom_user: "george@abenakitimber.com",
-          // wpcom_pass: process.env.WORDPRESS_PASSWORD.
-          wpcom_pass: "Rebecca6242017",
+          wpcom_app_clientSecret: process.env.WP_CLIENT_SECRET,
+          wpcom_app_clientId: process.env.WP_CLIENT_ID,
+          wpcom_user: process.env.WP_USER,
+          wpcom_pass: process.env.WP_PASS,
         },
         includedRoutes: ["**/media"],
         // Blacklisted routes using glob patterns
@@ -72,13 +62,25 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GA_ID,
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `darkhorse-charters`,
-        short_name: `starter`,
+        short_name: `Dark Horse Charters`,
         start_url: `/`,
-        background_color: `#000000`,
-        theme_color: `#000000`,
+        background_color: `#111111`,
+        theme_color: `#111111`,
         display: `minimal-ui`,
         icon: `src/images/darkhorse-icon.png`, // This path is relative to the root of the site.
       },

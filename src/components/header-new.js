@@ -1,16 +1,15 @@
 import { Link } from "gatsby"
-// import { stack as Menu } from "react-burger-menu"
 import React from "react"
 import styled from "styled-components"
-// import NavLink from "./nav-link"
+import { FaInstagram, FaFacebook } from "react-icons/fa"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
+
 import Logo from "./logo"
-import MenuDropdown from "./menu"
-import MenuButton from "./menu/menu-button"
-// import SideBar from "./sidebar"
 
 const StyledHeader = styled.header`
   background: #111111;
   color: #fbfbfb;
+  height: 80px;
   width: 100%;
   padding: 0 0.5rem;
   position: sticky;
@@ -66,15 +65,17 @@ const LogoText = styled.span`
     /* letter-spacing: initial; */
     font-size: 0.9rem;
   }
-  @media (max-width: 470px) {
+  @media (max-width: 440px) {
     display: none;
   }
 `
 
 const RightNav = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: end;
+  align-items: start;
+  padding-top: 5px;
+  transition: color 400ms ease-in;
   .bm-menu-wrap {
     position: fixed;
     top: 0px;
@@ -83,46 +84,63 @@ const RightNav = styled.div`
     width: 100%;
     height: 100%;
   }
+  a:hover {
+    color: #c32a24;
+    transition: color 400ms ease-in;
+  }
+`
+const SocialWrapper = styled.div`
+  color: #fbfbfb;
+  ul {
+    margin: 0;
+  }
+  li {
+    display: inline-block;
+    padding: 0.25rem 0.25rem 0 0.5rem;
+  }
+  li a {
+    color: #fbfbfb;
+    text-decoration: none;
+    transition: color 400ms ease-in;
+  }
 `
 
-class Header extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      menuOpen: false,
-    }
-  }
-
-  handleMenuClick(state) {
-    this.setState({ menuOpen: state.isOpen })
-  }
-
-  closeMenu() {
-    this.setState({ menuOpen: false })
-  }
-
-  toggleMenu() {
-    this.setState({ menuOpen: !this.state.menuOpen })
-  }
-
-  render() {
-    return (
-      <StyledHeader id="nav-wrap">
-        <StyledLink to="/" aria-label="Dark Horse Charters, Back to homepage">
-          <Logo />
-          <LogoText>Dark Horse Charters</LogoText>
-        </StyledLink>
-        <RightNav>
-          <div className="Navbar__Number">
-            <a href="tel:1-603-702-1570">(603) 702-1570</a>
-          </div>
-          <MenuDropdown pageWrapId={"page-wrapper"} outerContainerId={"App"} />
-          <MenuButton onClick={() => this.toggleMenu()} color="white" />
-          {/* <SideBar pageWrapId={"App"} outerContainerId={"nav-wrap"} /> */}
-        </RightNav>
-      </StyledHeader>
-    )
-  }
-}
+const Header = () => (
+  <StyledHeader id="nav-wrap">
+    <StyledLink to="/" aria-label="Dark Horse Charters, Back to homepage">
+      <Logo />
+      <LogoText>Dark Horse Charters</LogoText>
+    </StyledLink>
+    <RightNav>
+      <div className="Navbar__Number">
+        <a href="tel:1-603-702-1570">(603) 702-1570</a>
+      </div>
+      <SocialWrapper>
+        <ul className="social centered">
+          <li>
+            <OutboundLink
+              className="instagram"
+              title="instagram"
+              href="https://instagram.com/fvdarkhorse"
+              target="blank"
+            >
+              <FaInstagram />
+            </OutboundLink>
+          </li>
+          <li>
+            <OutboundLink
+              className="facebook"
+              title="facebook"
+              href="https://facebook.com/fvdarkhorse"
+              target="blank"
+            >
+              <FaFacebook />
+            </OutboundLink>
+          </li>
+        </ul>
+      </SocialWrapper>
+    </RightNav>
+  </StyledHeader>
+)
 
 export default Header

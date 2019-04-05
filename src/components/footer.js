@@ -1,8 +1,8 @@
 import React from "react"
 import Link from "gatsby-link"
 import styled from "styled-components"
-import { FaEnvelope, FaInstagram, FaFacebook } from "react-icons/fa"
-
+import { FaInstagram, FaFacebook } from "react-icons/fa"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 const FooterWrapper = styled.footer`
   display: flex;
   flex-direction: column;
@@ -130,35 +130,25 @@ export default () => {
             <SocialWrapper>
               <ul className="social centered">
                 <h5>Follow us!</h5>
-                {/* <li>
-              <a
-                className="email"
-                title="email"
-                href="mailto:darkhorsecharters@gmail.com"
-                target="blank"
-              >
-                <FaEnvelope />
-              </a>
-            </li> */}
                 <li>
-                  <a
+                  <OutboundLink
                     className="instagram"
                     title="instagram"
                     href="https://instagram.com/fvdarkhorse"
                     target="blank"
                   >
                     <FaInstagram />
-                  </a>
+                  </OutboundLink>
                 </li>
                 <li>
-                  <a
+                  <OutboundLink
                     className="facebook"
                     title="facebook"
                     href="https://facebook.com/fvdarkhorse"
                     target="blank"
                   >
                     <FaFacebook />
-                  </a>
+                  </OutboundLink>
                 </li>
               </ul>
             </SocialWrapper>

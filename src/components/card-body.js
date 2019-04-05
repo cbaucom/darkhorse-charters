@@ -24,6 +24,9 @@ const StyledBody = styled.div`
   padding: 15px;
   background-color: #fff;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   h2,
   p {
     margin-bottom: 10px;
@@ -58,11 +61,13 @@ const Button = () => {
 const CardBody = props => {
   return (
     <StyledBody>
-      <h2>{props.title}</h2>
-      <p className="body-time">{props.time}</p>
-      <div className="deets">
-        <p className="body-duration">{props.duration}</p>
-        <p className="body-price">{props.price}</p>
+      <div className="top">
+        <h2>{props.title}</h2>
+        <p className="body-time">{props.time}</p>
+        <div className="deets">
+          <p className="body-duration">{props.duration}</p>
+          <p className="body-price">{props.price}</p>
+        </div>
       </div>
       <p className="body-content">{props.text}</p>
 

@@ -92,7 +92,6 @@ const FormWrapper = styled.div`
     margin: 0.25rem 0 0.75rem;
     padding: 0.25rem;
     font-size: 1rem;
-    border: 1px solid #0366ee;
     &:focus {
       outline: 0;
       border-color: #d81103;
@@ -188,6 +187,7 @@ export default () => {
               name="book-now"
               method="POST"
               data-netlify="true"
+              data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
             >
               <label>
@@ -243,6 +243,7 @@ export default () => {
                 />
               </label>
               <Button title="Send" type="submit" />
+              <input type="hidden" name="form-name" value="book-now" />
             </form>
           </Card>
         </FormWrapper>

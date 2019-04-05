@@ -648,3 +648,97 @@ pre tt:after {
   text-align: center;
   overflow: auto;
 }
+
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 26px;
+    height: 18px;
+    right: 14px;
+    top: 45px;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #fbfbfb;
+    height: 15% !important;
+  }
+
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: #c32a24 !important;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 50px !important;
+    width: 50px !important;
+    position: absolute;
+    right: 10px !important;
+    top: 8px !important;
+  }
+
+  .bm-cross-button > span {
+    top: 10px !important;
+    right: 25px !important;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #fbfbfb;
+    width: 2px !important;
+    height: 25px !important;
+  }
+
+  /*
+Menu wrapper styles
+*/
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: #000;
+    padding: 2rem 1rem 0;
+    font-size: 1.15rem;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #fbfbfb;
+    padding: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 0.55rem 0.5rem;
+    color: #d1d1d1;
+    transition: color 0.2s;
+  }
+  .bm-item:hover {
+    color: #c32a24;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0);
+  }
+
+
+
+
+
