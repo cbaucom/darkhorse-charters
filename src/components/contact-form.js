@@ -25,7 +25,7 @@ class ContactForm extends React.Component {
   /* Here’s the juicy bit for posting the form submission */
 
   handleSubmit = e => {
-    fetch("/", {
+    fetch("/book-now", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state }),
@@ -41,7 +41,14 @@ class ContactForm extends React.Component {
   render() {
     const { name, email, phone, people, charter, message } = this.state
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        action="/thank-you"
+        onSubmit={this.handleSubmit}
+      >
+        <input type="hidden" name="form-name" value="contact" />
+
         <p>
           <label>
             Name:{" "}
