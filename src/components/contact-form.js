@@ -42,6 +42,7 @@ class ContactForm extends React.Component {
     const { name, email, phone, people, charter, message } = this.state
     return (
       <form
+        name="contact"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         action="/thank-you"
@@ -85,7 +86,7 @@ class ContactForm extends React.Component {
         <p>
           <label>
             Number of People:{" "}
-            <select name="people[]" value={people}>
+            <select name="people[]" value={people} onChange={this.handleChange}>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -98,7 +99,11 @@ class ContactForm extends React.Component {
         <p>
           <label>
             Message:{" "}
-            <select name="charter[]" value={charter}>
+            <select
+              name="charter[]"
+              value={charter}
+              onChange={this.handleChange}
+            >
               <option value="Commercial Tuna Charter">
                 Commercial Tuna Charter
               </option>
