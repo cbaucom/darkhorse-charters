@@ -7,6 +7,7 @@ import Button from "../components/button"
 import Container from "../components/styles/container"
 import HeroImage from "../components/image"
 import { Card } from "../components/styles/card"
+import ContactForm from "../components/contact-form"
 
 const InfoWrapper = styled.div`
   padding: 0.5rem;
@@ -158,14 +159,16 @@ export default () => {
         <FormWrapper>
           <Card>
             <h3>Request to book</h3>
-            <form
+            <ContactForm />
+            {/* <form
               name="book-now"
               method="POST"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
-              onSubmit={handleSubmit}
+              // onSubmit={handleSubmit}
               action="/thank-you"
             >
+              <input type="hidden" name="form-name" value="book-now" />
               <label>
                 Name *
                 <input
@@ -218,8 +221,7 @@ export default () => {
                 />
               </label>
               <Button title="Send" type="submit" />
-              <input type="hidden" name="form-name" value="book-now" />
-            </form>
+            </form> */}
           </Card>
         </FormWrapper>
       </Container>

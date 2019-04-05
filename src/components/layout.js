@@ -12,7 +12,7 @@ import styled from "styled-components"
 
 import "./layout.css"
 import MenuDropdown from "./menu"
-import Header from "./header-new"
+import Header from "./header"
 import Footer from "./footer"
 
 const Wrapper = styled.div`
