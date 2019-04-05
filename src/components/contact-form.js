@@ -51,47 +51,48 @@ class ContactForm extends React.Component {
         </div>
         <p>
           <label>
-            Name:{" "}
-            <input type={"text"} name={"name"} onChange={this.handleChange} />
+            Name: <input type="text" name="name" onChange={this.handleChange} />
           </label>
         </p>
         <p>
           <label>
             Email:{" "}
-            <input type={"email"} name={"email"} onChange={this.handleChange} />
+            <input type="email" name="email" onChange={this.handleChange} />
           </label>
         </p>
         <p>
           <label>
             Phone:{" "}
-            <input type={"tel"} name={"phone"} onChange={this.handleChange} />
+            <input type="tel" name="phone" onChange={this.handleChange} />
           </label>
         </p>
         <p>
           <label className="same-line">
             Number of People:{" "}
-            <select name={"people[]"} onChange={this.handleChange}>
-              <option value={"1"}>1</option>
-              <option value={"2"}>2</option>
-              <option value={"3"}>3</option>
-              <option value={"4"}>4</option>
-              <option value={"5"}>5</option>
-              <option value={"6"}>6</option>
+            <select name="people[]" onChange={this.handleChange}>
+              <option value="1" selected>
+                1
+              </option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
             </select>
           </label>
         </p>
         <p>
           <label className="same-line">
             Charter:{" "}
-            <select name={"charter[]"} onChange={this.handleChange}>
-              <option value={"Commercial Tuna Charter"}>
+            <select name="charter[]" onChange={this.handleChange}>
+              <option value="Commercial Tuna Charter" selected>
                 Commercial Tuna Charter
               </option>
-              <option value={"Bass Charter"}>Bass Charter</option>
-              <option value={"Ground Fishing Charter"}>
+              <option value="Bass Charter">Bass Charter</option>
+              <option value="Ground Fishing Charter">
                 Ground Fishing Charter
               </option>
-              <option value={"Private Boat Hire"}>Private Boat Hire</option>
+              <option value="Private Boat Hire">Private Boat Hire</option>
             </select>
           </label>
         </p>
@@ -99,8 +100,8 @@ class ContactForm extends React.Component {
           <label>
             Message:{" "}
             <textarea
-              id={"message"}
-              name={"message"}
+              id="message"
+              name="message"
               onChange={this.handleChange}
             />
           </label>
