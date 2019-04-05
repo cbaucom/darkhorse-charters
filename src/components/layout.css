@@ -666,7 +666,7 @@ pre tt:after {
 
   /* Color/shape of burger icon bars on hover*/
   .bm-burger-bars-hover {
-    background: #c32a24 !important;
+    background: #448ec7 !important;
   }
 
   /* Position and sizing of clickable cross button */
@@ -730,7 +730,7 @@ Menu wrapper styles
     transition: color 0.2s;
   }
   .bm-item:hover {
-    color: #c32a24;
+    color: #448ec7;
   }
 
   /* Styling of overlay */

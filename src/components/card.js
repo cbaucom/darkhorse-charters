@@ -11,9 +11,9 @@ const StyledCard = styled.article`
   &:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     display: flex;
-    height: 350px;
+    height: auto;
   }
 `
 

@@ -41,7 +41,7 @@ const StyledLink = styled(Link)`
     margin: 0 0.5rem 0 0;
   }
   &:hover {
-    color: #c32a24;
+    color: #448ec7;
     transition: color 400ms ease-in;
   }
   @media only screen and (max-width: 768px) {
@@ -59,7 +59,7 @@ const LogoText = styled.span`
   color: #fbfbfb;
   &:hover {
     transition: color 400ms ease-in;
-    color: #c32a24;
+    color: #448ec7;
   }
   @media (max-width: 768px) {
     /* letter-spacing: initial; */
@@ -85,7 +85,7 @@ const RightNav = styled.div`
     height: 100%;
   }
   a:hover {
-    color: #c32a24;
+    color: #448ec7;
     transition: color 400ms ease-in;
   }
 `
@@ -102,6 +102,13 @@ const SocialWrapper = styled.div`
     color: #fbfbfb;
     text-decoration: none;
     transition: color 400ms ease-in;
+  }
+  .instagram:hover {
+    color: #d6249f;
+  }
+
+  .facebook:hover {
+    color: #3b5998;
   }
 `
 

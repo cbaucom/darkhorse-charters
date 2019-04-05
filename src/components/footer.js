@@ -41,13 +41,13 @@ const FooterWrapper = styled.footer`
     transition: color 400ms ease-in;
   }
   .footer-nav a:hover {
-    color: #c32a24;
+    color: #448ec7;
     /* border-bottom: 1px solid; */
     transition: color 400ms ease-in;
   }
 
   .email:hover {
-    color: #c32a24;
+    color: #448ec7;
   }
 
   .instagram:hover {

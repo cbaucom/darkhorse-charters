@@ -2,14 +2,15 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledCardHeader = styled.header`
-  height: 300px;
+  min-height: 300px;
   padding: 15px;
   width: 100%;
   background-size: cover;
   background-position: center;
-  @media (min-width: 768px) {
+  @media (min-width: 600px) {
     width: 400px;
     min-height: 100%;
+    object-fit: cover;
   }
 `
 

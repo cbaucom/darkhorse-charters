@@ -4,17 +4,12 @@ import styled from "styled-components"
 import { FiPhoneCall, FiMail } from "react-icons/fi"
 import Layout from "../components/layout"
 import Button from "../components/button"
-// import Calendly from "../components/calendly"
 import Container from "../components/styles/container"
 import HeroImage from "../components/image"
 import { Card } from "../components/styles/card"
 
 const InfoWrapper = styled.div`
   padding: 0.5rem;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
   h3,
   h4 {
     text-align: center;
@@ -92,6 +87,7 @@ const FormWrapper = styled.div`
     margin: 0.25rem 0 0.75rem;
     padding: 0.25rem;
     font-size: 1rem;
+    border: 1px solid RGBA(68, 142, 199, 0.3);
     &:focus {
       outline: 0;
       border-color: #d81103;
@@ -127,10 +123,7 @@ export default () => {
         <h1>Book Now</h1>
         <InfoWrapper>
           <h3>Have questions or want to book a charter?</h3>
-          {/* <h4>
-            Contact us by filling out the form on this page, or you can
-            call/email us directly
-          </h4> */}
+
           <SectionWrapper>
             <div className="icon-wrapper">
               <FiPhoneCall />
@@ -161,24 +154,6 @@ export default () => {
               </p>
             </div>
           </SectionWrapper>
-          {/* <Card>
-            <div className="contact-text-wrapper">
-              <h3>Contact Details</h3>
-            </div>
-            <p>
-              George - <a href="tel:1-603-702-1570">(603) 702-1570</a>
-            </p>
-            <p>
-              Rebecca (George's wife) -{" "}
-              <a href="tel:1-508-451-5812">(508) 451-5812</a>
-            </p>
-            <p>
-              Email:{" "}
-              <a href="mailto:darkhorsecharters@gmail.com">
-                darkhorsecharters@gmail.com
-              </a>
-            </p>
-          </Card> */}
         </InfoWrapper>
         <FormWrapper>
           <Card>
@@ -189,6 +164,7 @@ export default () => {
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
+              action="/success"
             >
               <label>
                 Name *
@@ -238,8 +214,6 @@ export default () => {
                   type="text"
                   name="message"
                   placeholder="Message"
-                  // value={this.state.message}
-                  // onChange={this.handleInputChange}
                 />
               </label>
               <Button title="Send" type="submit" />
@@ -247,7 +221,6 @@ export default () => {
             </form>
           </Card>
         </FormWrapper>
-        {/* <Calendly /> */}
       </Container>
     </Layout>
   )

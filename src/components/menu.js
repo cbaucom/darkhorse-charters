@@ -38,7 +38,7 @@ const StyledLink = styled(Link)`
   text-transform: uppercase;
   transition: color 400ms ease-in;
   &:hover {
-    color: #c32a24;
+    color: #448ec7;
     transition: color 400ms ease-in;
   }
 `
