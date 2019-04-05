@@ -2,10 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import { FiPhoneCall, FiMail } from "react-icons/fi"
 import Layout from "../components/layout"
-import Button from "../components/button"
 import Container from "../components/styles/container"
 import HeroImage from "../components/image"
 import { Card } from "../components/styles/card"
+import ContactForm from "../components/contact-form"
 
 const InfoWrapper = styled.div`
   padding: 0.5rem;
@@ -145,61 +145,7 @@ export default () => (
       <FormWrapper>
         <Card>
           <h3>Request to book</h3>
-          <form
-            name="book-now"
-            method="post"
-            action="/thank-you"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
-            <input type="hidden" name="bot-field" />
-            <label>
-              Name *
-              <input id="name" name="name" type="text" required />
-            </label>
-            <label>
-              Email *
-              <input id="email" name="email" type="email" required />
-            </label>
-            <label>
-              Phone *
-              <input id="phone" name="phone" type="tel" required />
-            </label>
-            <label className="same-line">
-              Number of People
-              <select id="people" name="people[]">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-              </select>
-            </label>
-            <label className="same-line">
-              Charter Type:
-              <select id="charter" name="charter[]">
-                <option value="Commercial Tuna Charter">
-                  Commercial Tuna Charter
-                </option>
-                <option value="Bass Charter">Bass Charter</option>
-                <option value="Ground Fishing Charter">
-                  Ground Fishing Charter
-                </option>
-                <option value="Private Boat Hire">Private Boat Hire</option>
-              </select>
-            </label>
-            <label>
-              Message:{" "}
-              <textarea
-                id="message"
-                type="text"
-                name="message"
-                placeholder="Message"
-              />
-            </label>
-            <Button title="Send" type="submit" />
-          </form>
+          <ContactForm />
         </Card>
       </FormWrapper>
     </Container>
