@@ -164,7 +164,7 @@ export default () => {
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
-              action="/success"
+              action="/thank-you"
             >
               <label>
                 Name *
