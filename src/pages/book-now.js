@@ -169,6 +169,7 @@ export default () => {
               <label>
                 Name *
                 <input
+                  name="name"
                   type="text"
                   value={name}
                   onChange={handleInput}
@@ -177,11 +178,11 @@ export default () => {
               </label>
               <label>
                 Email *
-                <input type="email" required />
+                <input name="email" type="email" required />
               </label>
               <label>
                 Phone *
-                <input type="tel" required />
+                <input name="phone" type="tel" required />
               </label>
               <label className="same-line">
                 Number of People
