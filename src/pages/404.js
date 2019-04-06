@@ -49,7 +49,7 @@ const StyledLink = styled(Link)`
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
+    <SEO title="404: Not found | F/V Dark Horse" />
     <Container>
       <h4>We're sorry. You seem to be lost at sea.</h4>
       <FishBowl />

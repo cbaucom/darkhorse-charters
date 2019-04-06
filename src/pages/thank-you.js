@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const Container = styled.div`
   background: #f6f6f6;
@@ -48,6 +49,7 @@ export default props => {
   if (typeof window !== "undefined") {
     return (
       <Layout>
+        <SEO title="Thanks | F/V Dark Horse" />
         <Container>
           <div className="text-wrapper">
             <h1>Thanks, {props.location.state.name}! <span role="img" aria-label="fishing rod and hook emoji">🎣</span></h1>
@@ -60,6 +62,7 @@ export default props => {
   } else {
     return (
       <Layout>
+        <SEO title="Thanks | F/V Dark Horse" />
         <Container>
           <div className="text-wrapper">
             <h1>Thanks! <span role="img" aria-label="fishing rod and hook emoji">🎣</span></h1>

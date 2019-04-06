@@ -5,11 +5,10 @@ import SEO from "../components/seo"
 import Container from "../components/styles/container"
 import HeroImage from "../components/image"
 import Charters from "../components/charters"
-// import { Card } from "../components/styles/card"
 
 export default () => (
   <Layout>
-    <SEO title="Charters" />
+    <SEO title="Charters | F/V Dark Horse" />
     <HeroImage imgsrc="darkhorse-docked.jpg" />
     <Container>
       <div className="pricing-table">

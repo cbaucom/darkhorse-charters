@@ -27,7 +27,7 @@ const Captains = styled.section`
 
 const OurVessel = () => (
   <Layout>
-    <SEO title="Our Vessel | F/V Dark Horse" />
+    <SEO title="About | F/V Dark Horse" />
     <HeroImage imgsrc="darkhorse-docked.jpg" />
     <Container>
       <About>
