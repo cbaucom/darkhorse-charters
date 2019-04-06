@@ -12,7 +12,14 @@ const encode = data => {
 class ContactForm extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {}
+    this.state = {
+      name: "",
+      email: "",
+      phone: "",
+      people: "",
+      charter: "",
+      message: "",
+    }
   }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
@@ -53,6 +60,7 @@ class ContactForm extends React.Component {
             <input
               type="text"
               name="name"
+              value={this.state.name}
               onChange={this.handleChange}
               required
             />
@@ -64,6 +72,7 @@ class ContactForm extends React.Component {
             <input
               type="email"
               name="email"
+              value={this.state.email}
               onChange={this.handleChange}
               required
             />
@@ -75,6 +84,7 @@ class ContactForm extends React.Component {
             <input
               type="tel"
               name="phone"
+              value={this.state.phone}
               onChange={this.handleChange}
               required
             />
@@ -83,7 +93,12 @@ class ContactForm extends React.Component {
         <p>
           <label className="same-line">
             Number of People:{" "}
-            <select name="people[]" onChange={this.handleChange} required>
+            <select
+              name="people[]"
+              value={this.state.people}
+              onChange={this.handleChange}
+              required
+            >
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -96,7 +111,12 @@ class ContactForm extends React.Component {
         <p>
           <label className="same-line">
             Charter:{" "}
-            <select name="charter[]" onChange={this.handleChange} required>
+            <select
+              name="charter[]"
+              value={this.state.charter}
+              onChange={this.handleChange}
+              required
+            >
               <option value="Commercial Tuna Charter">
                 Commercial Tuna Charter
               </option>
@@ -114,6 +134,7 @@ class ContactForm extends React.Component {
             <textarea
               id="message"
               name="message"
+              value={this.state.message}
               onChange={this.handleChange}
             />
           </label>
