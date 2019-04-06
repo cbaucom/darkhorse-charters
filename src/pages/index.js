@@ -17,7 +17,7 @@ const CTAContainer = styled.section`
   align-items: center;
   text-align: center;
   padding: 2.5rem 0.5rem 5rem;
-  color: #fbfbfb;
+  color: #fefefe;
   background: #111;
   z-index: 200;
   h2 {
@@ -74,7 +74,7 @@ const GoFishingContainer = styled.section`
   align-items: center;
   text-align: center;
   min-height: 600px;
-  color: #fbfbfb;
+  color: #fefefe;
   box-shadow: inset 0 0 0 2000px rgba(1, 1, 1, 0.4);
   h2 {
     text-transform: uppercase;

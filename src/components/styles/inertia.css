@@ -40,7 +40,7 @@
 	padding: 20px 0;
 	text-transform: uppercase;
 	font-weight: 800;
-	color: #fbfbfb;
+	color: #fefefe;
 	background: #e74c3c;
 }
 
@@ -58,7 +58,7 @@
 } */
 .interior a,
 .Navbar__Number {
-	color: #fbfbfb;
+	color: #fefefe;
 	text-decoration: none;
 	display: block;
 	padding: 1.5rem 1.5rem 1.5rem 0;
@@ -68,5 +68,5 @@
 }
 .interior a:hover {
 	padding-left: 35px;
-	border-left: 6px #fbfbfb solid;
+	border-left: 6px #fefefe solid;
 }

@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import FishBowl from "../components/fish-bowl"
 
 const Container = styled.div`
-  background: #f6f6f6;
+  background: #fefefe;
   margin: 0 auto;
   padding: 1rem;
   width: 100%;

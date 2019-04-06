@@ -19,7 +19,7 @@ const InfoWrapper = styled.div`
   }
   a {
     text-decoration: none;
-    color: #448ec7;
+    color: ##23557B;
   }
   .contact-text-wrapper,
   .info {

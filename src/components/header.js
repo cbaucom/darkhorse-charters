@@ -8,7 +8,7 @@ import Logo from "./logo"
 
 const StyledHeader = styled.header`
   background: #111111;
-  color: #fbfbfb;
+  color: #fefefe;
   height: 80px;
   width: 100%;
   padding: 0 0.5rem;
@@ -19,7 +19,7 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   flex-direction: row;
   .Navbar__Number a {
-    color: #fbfbfb;
+    color: #fefefe;
     letter-spacing: 0px;
     font-size: 0.9rem;
     text-decoration: none;
@@ -28,7 +28,7 @@ const StyledHeader = styled.header`
 `
 
 const StyledLink = styled(Link)`
-  color: #fbfbfb;
+  color: #fefefe;
   display: flex;
   align-items: center;
   font-weight: 300;
@@ -50,7 +50,7 @@ const LogoText = styled.span`
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: color 400ms ease-in;
-  color: #fbfbfb;
+  color: #fefefe;
   &:hover {
     transition: color 400ms ease-in;
     color: #448ec7;
@@ -83,7 +83,7 @@ const RightNav = styled.div`
   }
 `
 const SocialWrapper = styled.div`
-  color: #fbfbfb;
+  color: #fefefe;
   ul {
     margin: 0;
   }
@@ -92,7 +92,7 @@ const SocialWrapper = styled.div`
     padding: 0.25rem 0.25rem 0 0.5rem;
   }
   li a {
-    color: #fbfbfb;
+    color: #fefefe;
     text-decoration: none;
     transition: color 400ms ease-in;
   }

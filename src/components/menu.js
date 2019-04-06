@@ -16,7 +16,7 @@ const MenuLogo = styled.div`
 
 const StyledMenu = styled(Menu)`
   .Navbar__Number a {
-    color: #fbfbfb;
+    color: #fefefe;
     font-size: 1.2rem !important;
     text-decoration: none;
     padding-right: 10px;
@@ -28,7 +28,7 @@ const StyledLink = styled(Link)`
     font-size: 1.5rem;
     text-align: center;
   }
-  color: #fbfbfb;
+  color: #fefefe;
   display: flex;
   align-items: center;
   font-weight: 300;

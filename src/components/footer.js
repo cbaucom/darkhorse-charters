@@ -11,12 +11,12 @@ const FooterWrapper = styled.footer`
   text-align: center;
   padding: 2rem 0.5rem 1rem;
   font-size: 1.3em;
-  color: #fbfbfb;
+  color: #fefefe;
   background: #111111;
   p {
     font-size: 0.7em;
     margin-bottom: 0.2rem;
-    color: #fbfbfb;
+    color: #fefefe;
   }
 
   ul.social,
@@ -34,7 +34,7 @@ const FooterWrapper = styled.footer`
 
   .footer-nav li a,
   .social li a {
-    color: #fbfbfb;
+    color: #fefefe;
     text-decoration: none;
     line-height: 1.85;
     padding: 5px 2px;
@@ -93,7 +93,7 @@ const SocialWrapper = styled.div`
 
 const Payments = styled.section`
   padding: 0.5rem;
-  color: #fbfbfb;
+  color: #fefefe;
   span {
     font-size: 0.7rem;
     margin: 0 8px 14px 0;

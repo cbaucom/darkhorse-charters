@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Container = styled.div`
-  background: #f6f6f6;
+  background: #fefefe;
   margin: 0 auto;
   padding: 2rem;
   width: 100%;

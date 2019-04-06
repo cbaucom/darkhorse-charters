@@ -9,13 +9,13 @@ const GramWrapper = styled.div`
   text-align: center;
   margin: 0 auto;
   background: #111;
-  color: #fbfbfb;
+  color: #fefefe;
   padding: 3rem 0.5rem;
   h2 {
     margin-bottom: 0.5rem;
   }
   a.instalink {
-    color: #fbfbfb;
+    color: #fefefe;
     text-decoration: none;
     border-bottom: 3px solid #c32a24;
     font-size: 1.25rem;

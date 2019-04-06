@@ -16,7 +16,7 @@ import Header from "./header"
 import Footer from "./footer"
 
 const Wrapper = styled.div`
-  background: #f6f6f6;
+  background: #fefefe;
   color: #333;
   margin: 0 auto;
   width: 100%;
