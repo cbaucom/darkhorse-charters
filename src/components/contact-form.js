@@ -12,9 +12,7 @@ const encode = data => {
 class ContactForm extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      isValidated: false,
-    }
+    this.state = {}
   }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
@@ -51,28 +49,42 @@ class ContactForm extends React.Component {
         </div>
         <p>
           <label>
-            Name: <input type="text" name="name" onChange={this.handleChange} />
+            Name:{" "}
+            <input
+              type="text"
+              name="name"
+              onChange={this.handleChange}
+              required
+            />
           </label>
         </p>
         <p>
           <label>
             Email:{" "}
-            <input type="email" name="email" onChange={this.handleChange} />
+            <input
+              type="email"
+              name="email"
+              onChange={this.handleChange}
+              required
+            />
           </label>
         </p>
         <p>
           <label>
             Phone:{" "}
-            <input type="tel" name="phone" onChange={this.handleChange} />
+            <input
+              type="tel"
+              name="phone"
+              onChange={this.handleChange}
+              required
+            />
           </label>
         </p>
         <p>
           <label className="same-line">
             Number of People:{" "}
-            <select name="people[]" onChange={this.handleChange}>
-              <option value="1" selected>
-                1
-              </option>
+            <select name="people[]" onChange={this.handleChange} required>
+              <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
@@ -84,8 +96,8 @@ class ContactForm extends React.Component {
         <p>
           <label className="same-line">
             Charter:{" "}
-            <select name="charter[]" onChange={this.handleChange}>
-              <option value="Commercial Tuna Charter" selected>
+            <select name="charter[]" onChange={this.handleChange} required>
+              <option value="Commercial Tuna Charter">
                 Commercial Tuna Charter
               </option>
               <option value="Bass Charter">Bass Charter</option>
