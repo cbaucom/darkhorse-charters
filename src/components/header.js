@@ -44,17 +44,11 @@ const StyledLink = styled(Link)`
     color: #448ec7;
     transition: color 400ms ease-in;
   }
-  @media only screen and (max-width: 768px) {
-    /* flex-direction: column; */
-    /* margin: 0 auto; */
-  }
 `
 
 const LogoText = styled.span`
   text-transform: uppercase;
-  /* font-size: 1.25rem; */
   letter-spacing: 1px;
-  /* margin-left: 0.75rem; */
   transition: color 400ms ease-in;
   color: #fbfbfb;
   &:hover {
@@ -62,7 +56,6 @@ const LogoText = styled.span`
     color: #448ec7;
   }
   @media (max-width: 768px) {
-    /* letter-spacing: initial; */
     font-size: 0.9rem;
   }
   @media (max-width: 440px) {

@@ -44,13 +44,13 @@ const StyledLink = styled(Link)`
       inset 0 2px 1px RGBA(68, 142, 199, 1);
   }
 `
-export default ({ location }) => {
+export default props => {
   if (typeof window !== "undefined") {
     return (
       <Layout>
         <Container>
           <div className="text-wrapper">
-            <h1>Thanks! 🎣</h1>
+            <h1>Thanks, {props.location.state.name}! 🎣</h1>
             <h3>We will be in touch shortly!</h3>
           </div>
           <StyledLink to="/">Back Home</StyledLink>

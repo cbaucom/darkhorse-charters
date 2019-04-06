@@ -19,7 +19,6 @@ const CTAContainer = styled.section`
   padding: 2.5rem 0.5rem 5rem;
   color: #fbfbfb;
   background: #111;
-  /* box-shadow: inset 0 0 0 2000px rgba(1, 1, 1, 0.4); */
   z-index: 200;
   h2 {
     text-transform: uppercase;

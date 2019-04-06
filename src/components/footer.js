@@ -42,7 +42,6 @@ const FooterWrapper = styled.footer`
   }
   .footer-nav a:hover {
     color: #448ec7;
-    /* border-bottom: 1px solid; */
     transition: color 400ms ease-in;
   }
 

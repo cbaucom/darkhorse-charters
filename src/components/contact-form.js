@@ -29,12 +29,18 @@ class ContactForm extends React.Component {
   handleSubmit = e => {
     e.preventDefault()
     const form = e.target
+    const name = this.state.name
+
     fetch("/book-now", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": form.getAttribute("name"), ...this.state }),
     })
-      .then(() => navigate(form.getAttribute("action")))
+      .then(() =>
+        navigate(form.getAttribute("action"), {
+          state: { name },
+        })
+      )
       .catch(error => alert(error))
   }
 
@@ -141,9 +147,7 @@ class ContactForm extends React.Component {
             />
           </label>
         </p>
-        <p>
-          <Button title="Send" type="submit" />
-        </p>
+        <Button title="Send" type="submit" />
       </form>
     )
   }
