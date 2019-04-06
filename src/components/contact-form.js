@@ -16,10 +16,12 @@ class ContactForm extends React.Component {
       name: "",
       email: "",
       phone: "",
-      people: "",
-      charter: "",
+      people: "1",
+      charter: "Ground Fishing Charter",
       message: "",
     }
+
+    this.handleChange = this.handleChange.bind(this)
   }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
@@ -94,7 +96,7 @@ class ContactForm extends React.Component {
           <label className="same-line">
             Number of People:{" "}
             <select
-              name="people[]"
+              name="people"
               value={this.state.people}
               onChange={this.handleChange}
               required
@@ -112,7 +114,7 @@ class ContactForm extends React.Component {
           <label className="same-line">
             Charter:{" "}
             <select
-              name="charter[]"
+              name="charter"
               value={this.state.charter}
               onChange={this.handleChange}
               required
