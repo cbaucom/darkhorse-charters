@@ -127,8 +127,8 @@ export default () => {
           </ul>
           <FooterMiddle>
             <SocialWrapper>
+              <h5>Follow us!</h5>
               <ul className="social centered">
-                <h5>Follow us!</h5>
                 <li>
                   <OutboundLink
                     className="instagram"
