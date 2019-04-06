@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { FiPhoneCall, FiMail } from "react-icons/fi"
+import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Container from "../components/styles/container"
 import HeroImage from "../components/image"
@@ -107,6 +108,7 @@ const FormWrapper = styled.div`
 
 export default () => (
   <Layout>
+    <SEO title="Book Now | F/V Dark Horse" />
     <HeroImage imgsrc="darkhorse-fishing-tuna-short.jpg" />
     <Container>
       <h1>Book Now</h1>
