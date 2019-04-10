@@ -1,7 +1,7 @@
 import React from "react"
 import { navigate } from "gatsby"
 import DatePicker from "react-date-picker"
-import Button from "./button"
+import Button from "./Button"
 
 const encode = data => {
   return Object.keys(data)
@@ -122,7 +122,7 @@ class ContactForm extends React.Component {
             />
           </label>
         </p>
-        <p>
+        <div>
           <label className="same-line">
             Date:{" "}
             <DatePicker
@@ -136,7 +136,7 @@ class ContactForm extends React.Component {
               // numberOfMonths={1}
             />
           </label>
-        </p>
+        </div>
         <p>
           <label className="same-line">
             Number of People:{" "}

@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import CardHeader from "./card-header"
-import CardBody from "./card-body"
+import { CardHeader, CardBody } from "../components"
 
 const StyledCard = styled.article`
   background: #fff;

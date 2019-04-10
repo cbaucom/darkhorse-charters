@@ -2,7 +2,7 @@ import React from "react"
 import Menu from "react-burger-menu/lib/menus/stack"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import Logo from "./logo"
+import Logo from "./Logo"
 
 const MenuLogo = styled.div`
   svg {

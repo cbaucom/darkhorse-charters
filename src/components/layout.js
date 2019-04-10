@@ -11,9 +11,7 @@ import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 import "./layout.css"
-import MenuDropdown from "./menu"
-import Header from "./header"
-import Footer from "./footer"
+import { MenuDropdown, Header, Footer } from "../components"
 
 const Wrapper = styled.div`
   background: #fefefe;

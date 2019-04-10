@@ -1,8 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Layout, SEO } from "../components"
 
 const Container = styled.div`
   background: #fefefe;
@@ -52,7 +51,12 @@ export default props => {
         <SEO title="Thanks | F/V Dark Horse" />
         <Container>
           <div className="text-wrapper">
-            <h1>Thanks, {props.location.state.name}! <span role="img" aria-label="fishing rod and hook emoji">🎣</span></h1>
+            <h1>
+              Thanks, {props.location.state.name}!{" "}
+              <span role="img" aria-label="fishing rod and hook emoji">
+                🎣
+              </span>
+            </h1>
             <h3>We will be in touch shortly!</h3>
           </div>
           <StyledLink to="/">Back Home</StyledLink>
@@ -65,7 +69,12 @@ export default props => {
         <SEO title="Thanks | F/V Dark Horse" />
         <Container>
           <div className="text-wrapper">
-            <h1>Thanks! <span role="img" aria-label="fishing rod and hook emoji">🎣</span></h1>
+            <h1>
+              Thanks!{" "}
+              <span role="img" aria-label="fishing rod and hook emoji">
+                🎣
+              </span>
+            </h1>
             <h3>We will be in touch shortly!</h3>
           </div>
           <StyledLink to="/">Back Home</StyledLink>

@@ -1,9 +1,6 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Container from "../components/styles/container"
-import WordpressMedia from "../components/wordpress-media"
-// import WPGallery from "../components/gallery";
+import { Layout, SEO, WordpressMedia } from "../components"
+import { Container } from "../components/styles"
 
 const GalleryPage = () => (
   <Layout>
@@ -11,7 +8,6 @@ const GalleryPage = () => (
     <Container>
       <h1>Gallery</h1>
       <WordpressMedia />
-      {/* <WPGallery /> */}
     </Container>
   </Layout>
 )

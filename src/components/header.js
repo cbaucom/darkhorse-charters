@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { FaInstagram, FaFacebook } from "react-icons/fa"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
-import Logo from "./logo"
+import Logo from "./Logo"
 
 const StyledHeader = styled.header`
   background: #111111;

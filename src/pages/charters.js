@@ -2,18 +2,19 @@ import React from "react"
 import styled from "styled-components"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Container from "../components/styles/container"
-import HeroImage from "../components/image"
-import WhatsProvided from "../components/WhatsProvided"
-import WhatToBring from "../components/WhatToBring"
-import Card from "../components/card"
+import {
+  Layout,
+  SEO,
+  HeroImage,
+  WhatsProvided,
+  WhatToBring,
+  Card,
+} from "../components"
+import { Container, Wrapper } from "../components/styles"
 import bassCharterImage from "../images/bass-pic.png"
 import groundCharterImage from "../images/ground-fish-pic.png"
 import tunaCharterImage from "../images/tuna-brothers.jpg"
 import privateCharterImage from "../images/darkhorse-fishing-tuna.jpg"
-import Wrapper from "../components/styles/wrapper"
 
 const StyledLink = styled(AnchorLink)`
   border: none;

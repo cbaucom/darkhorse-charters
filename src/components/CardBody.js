@@ -56,7 +56,6 @@ const StyledBody = styled.div`
 `
 
 const Button = ({ to, text }) => {
-  console.log(to)
   return (
     <StyledButton to={`/${to}`}>
       {text}
@@ -75,7 +74,6 @@ const CardBody = ({
   buttonText,
   subText,
 }) => {
-  console.log(link)
   return (
     <StyledBody>
       <div className="top">

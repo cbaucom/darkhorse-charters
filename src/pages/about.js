@@ -1,10 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-// import Img from "gatsby-image"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Container from "../components/styles/container"
-import HeroImage from "../components/image"
+
+import { Layout, SEO, HeroImage } from "../components"
+import { Container } from "../components/styles"
 import TunaBros from "../images/tuna-brothers-bw.jpg"
 import PushingWater from "../images/pushing-water.jpg"
 

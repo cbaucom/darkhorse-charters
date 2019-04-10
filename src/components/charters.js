@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Card from "./card"
+import Card from "./Card"
 import groundCharterImage from "../images/tuna-brothers.jpg"
 import bassCharterImage from "../images/darkhorse-docked.jpg"
 import tunaCharterImage from "../images/big-tuna-fishing.jpg"

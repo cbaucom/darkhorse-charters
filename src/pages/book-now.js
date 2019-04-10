@@ -1,12 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import { FiPhoneCall, FiMail } from "react-icons/fi"
-import SEO from "../components/seo"
-import Layout from "../components/layout"
-import Container from "../components/styles/container"
-import HeroImage from "../components/image"
-import { Card } from "../components/styles/card"
-import ContactForm from "../components/contact-form"
+
+import { Layout, SEO, HeroImage, ContactForm } from "../components"
+import { Card, Container } from "../components/styles"
 
 const InfoWrapper = styled.div`
   padding: 0.5rem;

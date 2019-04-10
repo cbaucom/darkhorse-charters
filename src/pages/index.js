@@ -2,13 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import Layout from "../components/layout"
-import HeroImage from "../components/image"
-import SEO from "../components/seo"
+import { Layout, HeroImage, SEO, Instagram, Charters } from "../components"
+import { Container } from "../components/styles"
 import bigFish from "../images/big-tuna-fishing.jpg"
-import Instagram from "../components/instagram"
-import Charters from "../components/charters"
-import Container from "../components/styles/container"
 
 const CTAContainer = styled.section`
   display: flex;

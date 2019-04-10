@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const Card = styled.article`
+const Card = styled.article`
   background: #fff;
   padding: 1rem;
   margin: 1rem auto;
@@ -25,3 +25,4 @@ export const Card = styled.article`
     min-height: 530px;
   }
 `
+export default Card

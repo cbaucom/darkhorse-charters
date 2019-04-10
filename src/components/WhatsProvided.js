@@ -1,7 +1,6 @@
 import React from "react"
 import { FaCheck } from "react-icons/fa"
-import { Card } from "./styles/card"
-import Wrapper from "./styles/wrapper"
+import { Card, Wrapper } from "./styles"
 
 const WhatsProvided = () => {
   return (
