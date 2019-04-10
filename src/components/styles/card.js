@@ -4,6 +4,7 @@ const Card = styled.article`
   background: #fff;
   padding: 1rem;
   margin: 1rem auto;
+  width: 100%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   transition: 0.25s;
   display: flex;
