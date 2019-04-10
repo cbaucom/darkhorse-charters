@@ -131,9 +131,6 @@ class ContactForm extends React.Component {
               onChange={this.onDateChange}
               clearIcon={null}
               minDate={new Date()}
-              // focused={this.state.calendarFocused}
-              // onFocusChange={this.onFocusChange}
-              // numberOfMonths={1}
             />
           </label>
         </div>
