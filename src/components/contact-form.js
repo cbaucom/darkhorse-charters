@@ -1,6 +1,7 @@
 import React from "react"
 import { navigate } from "gatsby"
-
+import moment from "moment"
+import DatePicker from "react-date-picker"
 import Button from "./button"
 
 const encode = data => {
@@ -19,6 +20,9 @@ class ContactForm extends React.Component {
       people: "1",
       charter: "Ground Fishing Charter",
       message: "",
+      requestedDate: new Date(),
+      calendarFocused: false,
+      error: "",
     }
 
     this.handleChange = this.handleChange.bind(this)
@@ -26,22 +30,42 @@ class ContactForm extends React.Component {
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
 
+  onDateChange = requestedDate => {
+    if (requestedDate) {
+      this.setState(() => ({ requestedDate }))
+    }
+  }
+
+  onFocusChange = ({ focused }) => {
+    this.setState(() => ({ calendarFocused: focused }))
+  }
+
   handleSubmit = e => {
     e.preventDefault()
-    const form = e.target
-    const name = this.state.name
 
-    fetch("/book-now", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": form.getAttribute("name"), ...this.state }),
-    })
-      .then(() =>
-        navigate(form.getAttribute("action"), {
-          state: { name },
-        })
-      )
-      .catch(error => alert(error))
+    if (!this.state.name || !this.state.email || !this.state.phone) {
+      this.setState(() => ({
+        error: "Please provide your name, email, and phone number",
+      }))
+    } else {
+      // Clear the error
+      this.setState(() => ({ error: "" }))
+
+      const form = e.target
+      const name = this.state.name
+
+      fetch("/book-now", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": form.getAttribute("name"), ...this.state }),
+      })
+        .then(() =>
+          navigate(form.getAttribute("action"), {
+            state: { name },
+          })
+        )
+        .catch(error => alert(error))
+    }
   }
 
   render() {
@@ -54,6 +78,7 @@ class ContactForm extends React.Component {
         data-netlify-honeypot="bot-field"
         onSubmit={this.handleSubmit}
       >
+        {this.state.error && <p className="form-error">{this.state.error}</p>}
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
         <input type="hidden" name="form-name" value="contact" />
         <div hidden>
@@ -95,6 +120,21 @@ class ContactForm extends React.Component {
               value={this.state.phone}
               onChange={this.handleChange}
               required
+            />
+          </label>
+        </p>
+        <p>
+          <label className="same-line">
+            Date:{" "}
+            <DatePicker
+              name="requestedDate"
+              value={this.state.requestedDate}
+              onChange={this.onDateChange}
+              clearIcon={null}
+              minDate={new Date()}
+              // focused={this.state.calendarFocused}
+              // onFocusChange={this.onFocusChange}
+              // numberOfMonths={1}
             />
           </label>
         </p>

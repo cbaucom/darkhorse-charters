@@ -40,8 +40,7 @@ const StyledBody = styled.div`
     align-items: center;
   }
   .body-time,
-  .body-duration,
-  .body-price {
+  .body-duration {
     font-size: 0.85rem;
   }
   .body-price {
@@ -51,34 +50,46 @@ const StyledBody = styled.div`
 
   .body-content {
     padding: 1rem 0;
-    font-size: 13px;
+    font-size: 0.85rem;
     line-height: 1.8;
   }
 `
 
-const Button = () => {
+const Button = ({ to, text }) => {
+  console.log(to)
   return (
-    <StyledButton to={"/charters"}>
-      Find out more
+    <StyledButton to={`/${to}`}>
+      {text}
       <FaChevronRight />
     </StyledButton>
   )
 }
 
-const CardBody = props => {
+const CardBody = ({
+  title,
+  time,
+  price,
+  duration,
+  text,
+  link,
+  buttonText,
+  subText,
+}) => {
+  console.log(link)
   return (
     <StyledBody>
       <div className="top">
-        <h2>{props.title}</h2>
+        <h2>{title}</h2>
         <div className="deets">
-          <p className="body-time">{props.time}</p>
-          <p className="body-price">{props.price}</p>
+          <p className="body-time">{time}</p>
+          <p className="body-price">{price}</p>
         </div>
-        <p className="body-duration">{props.duration}</p>
+        <p className="body-duration">{duration}</p>
       </div>
-      <p className="body-content">{props.text}</p>
+      <p className="body-content">{text}</p>
+      <p className="body-content">{subText}</p>
 
-      <Button />
+      <Button text={buttonText} to={link} />
     </StyledBody>
   )
 }

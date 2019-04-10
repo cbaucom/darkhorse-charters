@@ -5,7 +5,7 @@ import CardBody from "./card-body"
 
 const StyledCard = styled.article`
   background: #fff;
-  margin: 20px auto;
+  margin: 1rem auto;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   transition: 0.25s;
   &:hover {
@@ -27,6 +27,9 @@ const Card = props => {
         duration={props.duration}
         price={props.price}
         text={props.text}
+        buttonText={props.buttonText}
+        link={props.link}
+        subText={props.subText || ""}
       />
     </StyledCard>
   )

@@ -27,7 +27,9 @@ const Charters = () => {
         duration={"7 - 9 hours"}
         price={"$1200"}
         text={`Off shore fishing the Jeffery’s ledge, and Stellwagen Bank. Sightings of whales, dolphins, porpoise and other sea creatures are not uncommon
-				`}
+        `}
+        buttonText={"Find out more"}
+        link={"charters"}
       />
       <Card
         image={bassCharterImage}
@@ -36,7 +38,9 @@ const Charters = () => {
         duration={"5 - 8 hours"}
         price={"$800 - $1000"}
         text={`Hire the F/V Dark Horse and it’s professional crew for a day adventure of your choice (ferrying service, day trips to local attractions, trip to beach, or design a trip to fit your needs)
-				`}
+        `}
+        buttonText={"Find out more"}
+        link={"charters"}
       />
       <Card
         image={privateCharterImage}
@@ -45,7 +49,9 @@ const Charters = () => {
         duration={"12 hours"}
         price={"$2000"}
         text={`Hire the F/V Dark Horse and it’s professional crew for a day adventure of your choice (ferrying service, day trips to local attractions, trip to beach, or design a trip to fit your needs)
-				`}
+        `}
+        buttonText={"Find out more"}
+        link={"charters"}
       />
       <Card
         image={tunaCharterImage}
@@ -55,6 +61,8 @@ const Charters = () => {
         price={"$1600 - $2500"}
         text={`Come along on a commercial tuna fishing trip aboard the Dark Horse, we will be targeting Giant tuna (73” and up) using live bait and/or trolling gear. This is the ultimate experience to be part of. Catch the giant fish of a lifetime and come along for a serious fishing adventure. Travel to the fertile offshore waters of the gulf of Maine and see first hand what it is like to target a giant tuna.
           `}
+        buttonText={"Find out more"}
+        link={"charters"}
       />
     </Wrapper>
   )

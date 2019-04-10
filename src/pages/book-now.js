@@ -19,7 +19,7 @@ const InfoWrapper = styled.div`
   }
   a {
     text-decoration: none;
-    color: ##23557B;
+    color: ##23557b;
   }
   .contact-text-wrapper,
   .info {
@@ -73,7 +73,12 @@ const FormWrapper = styled.div`
   form {
     text-align: left;
   }
-
+  .form-error {
+    margin: 0 0 1rem 0;
+    font-style: italic;
+    color: red;
+    text-align: center;
+  }
   label {
     margin-bottom: 1rem;
     text-align: left;
@@ -99,10 +104,20 @@ const FormWrapper = styled.div`
   .same-line {
     display: grid;
     grid-template-columns: 1fr;
+    align-items: baseline;
     margin: 0.5rem 0;
     @media (min-width: 600px) {
       grid-template-columns: 1fr 2fr;
     }
+  }
+  .react-date-picker__wrapper {
+    width: 100%;
+    border: 1px solid RGBA(68, 142, 199, 0.3);
+  }
+  .react-date-picker__inputGroup input {
+    border: none;
+    margin: 0;
+    width: 100% !important;
   }
 `
 

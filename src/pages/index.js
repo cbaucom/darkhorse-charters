@@ -86,13 +86,33 @@ const GoFishingContainer = styled.section`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`darkhorse`, `fishing`, `charter`, `newburyport`, `massachusetts`, `tuna`, `bass`, `fish`, `newbury`, `gloucester`, `new england`, `commerical fishing`, `private charter`, `boat`, `boat charter`]} />
+    <SEO
+      title="Home"
+      keywords={[
+        `darkhorse`,
+        `fishing`,
+        `charter`,
+        `newburyport`,
+        `massachusetts`,
+        `tuna`,
+        `bass`,
+        `fish`,
+        `newbury`,
+        `gloucester`,
+        `new england`,
+        `commerical fishing`,
+        `private charter`,
+        `boat`,
+        `boat charter`,
+      ]}
+    />
     <HeroImage imgsrc="darkhorse-fishing-tuna-short.jpg" />
     <CTAContainer>
       <h2>Now accepting reservations for 2019 charters!</h2>
       <StyledLink to="/book-now">Book Now</StyledLink>
     </CTAContainer>
     <Container>
+      <h1 className="center">Types of Charters</h1>
       <Charters />
     </Container>
     <Instagram />
