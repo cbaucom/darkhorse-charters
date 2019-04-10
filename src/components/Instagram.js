@@ -138,7 +138,7 @@ const HeartIcon = styled.img`
 const Instagram = () => (
   <StaticQuery
     query={graphql`
-      query Instagram {
+      query InstagramQuery {
         instagram: allInstaNode(
           sort: { fields: timestamp, order: DESC }
           limit: 12
