@@ -1,6 +1,5 @@
 import React from "react"
 import { navigate } from "gatsby"
-import moment from "moment"
 import DatePicker from "react-date-picker"
 import Button from "./button"
 
