@@ -4,11 +4,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Dark Horse Charters`,
+    title: `Dark Horse Fishing Charters Newburyport`,
     description: `Top Fishing Charters in Massachusetts. Dark Horse Fishing Charters offers fishing charters in and around Newburyport, Massachusetts for 1 to 6 people. FV Dark Horse fishes for giant bluefin tuna, cod, haddock, pollack, red fish, whiting, hake, ling, mackerel, herring, halibut, & dog fish. Book your charter for 2019 today!`,
     author: `Chris Baucom`,
-    keywords:
-        `darkhorse,
+    keywords: `darkhorse,
         fishing,
         charter,
         newburyport,
@@ -111,6 +110,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    'gatsby-plugin-offline',
+    "gatsby-plugin-offline",
   ],
 }

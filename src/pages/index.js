@@ -89,7 +89,7 @@ const IndexPage = () => (
       <StyledLink to="/book-now">Book Now</StyledLink>
     </CTAContainer>
     <Container>
-      <h1 className="center">Types of Charters</h1>
+      <h1 className="center">Types of Fishing Charters</h1>
       <Charters />
     </Container>
     <Instagram />

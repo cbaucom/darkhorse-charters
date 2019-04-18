@@ -1,17 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 import Card from "./Card"
-import groundCharterImage from "../images/tuna-brothers.jpg"
-import bassCharterImage from "../images/darkhorse-docked.jpg"
+import groundCharterImage from "../images/darkhorse-groundfish.jpg"
+import bassCharterImage from "../images/bass-pic.png"
 import tunaCharterImage from "../images/big-tuna-fishing.jpg"
 import privateCharterImage from "../images/darkhorse-fishing-tuna.jpg"
 
 const Wrapper = styled.section`
   width: 100%;
   padding: 0.5rem;
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: stretch; */
   @media (min-width: 768px) {
     padding: 0.5rem 0;
   }
@@ -30,24 +27,24 @@ const Charters = () => {
         `}
         buttonText={"Find out more"}
         link={"charters"}
+        ribbonText={"Go home with plenty of fish to eat"}
       />
       <Card
         image={bassCharterImage}
         title={"Bass Charters"}
         time={"May - June"}
         duration={"5 - 8 hours"}
-        price={"$800 - $1000"}
-        text={`Hire the F/V Dark Horse and it’s professional crew for a day adventure of your choice (ferrying service, day trips to local attractions, trip to beach, or design a trip to fit your needs)
-        `}
+        price={"$800"}
+        text={`Fish for striped bass, bluefish, and mackerel in and around the Merrimack river and Ipswich bay.`}
         buttonText={"Find out more"}
         link={"charters"}
       />
       <Card
         image={privateCharterImage}
         title={"Private Boat Hire"}
-        time={"May - June"}
-        duration={"12 hours"}
-        price={"$2000"}
+        time={"April - Decemeber"}
+        duration={"4 hour minimum"}
+        price={"$250/hour"}
         text={`Hire the F/V Dark Horse and it’s professional crew for a day adventure of your choice (ferrying service, day trips to local attractions, trip to beach, or design a trip to fit your needs)
         `}
         buttonText={"Find out more"}

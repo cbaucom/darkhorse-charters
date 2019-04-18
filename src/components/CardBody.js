@@ -8,7 +8,7 @@ const StyledButton = styled(Link)`
   box-shadow: none;
   font-family: inherit;
   background-color: transparent;
-  color: #448ec7;
+  color: #0a5c9b;
   font-size: 1rem;
   transition: 0.25s;
   display: flex;
@@ -44,7 +44,7 @@ const StyledBody = styled.div`
     font-size: 0.85rem;
   }
   .body-price {
-    color: #448ec7;
+    color: #0a5c9b;
     font-size: 1.25rem;
   }
 
@@ -52,6 +52,52 @@ const StyledBody = styled.div`
     padding: 1rem 0;
     font-size: 0.85rem;
     line-height: 1.8;
+  }
+
+  .body-subtext {
+    font-size: 0.85rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .ribbon {
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    margin: 0.5rem -1.8rem 1rem;
+    text-align: center;
+    /* background: #ffd72a; */
+    background: #97c6ea;
+    color: #0a5c9b;
+    padding: 0.5em;
+    line-height: 1.5rem;
+    @media (min-width: 480px) {
+      margin: 0.5rem -1.6rem 1.5rem;
+    }
+  }
+  .ribbon:before,
+  .ribbon:after,
+  .bold:before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+  }
+  .ribbon:before {
+    bottom: 100%;
+    left: 0;
+    border-width: 0.5em 0.7em 0 0;
+    border-color: transparent #0a5c9b transparent transparent;
+  }
+  .ribbon:after {
+    top: 100%;
+    right: 0;
+    border-width: 0.5em 0.7em 0 0;
+    border-color: #0a5c9b transparent transparent transparent;
+  }
+  .text {
+    justify-content: center;
+  }
+  .bold:before {
+    z-index: -1;
   }
 `
 
@@ -73,10 +119,13 @@ const CardBody = ({
   link,
   buttonText,
   subText,
+  ribbonText,
 }) => {
+  const hasSubText = subText.length === 0 ? false : true
+  const hasRibbon = ribbonText.length === 0 ? false : true
   return (
     <StyledBody>
-      <div className="top">
+      <div>
         <h2>{title}</h2>
         <div className="deets">
           <p className="body-time">{time}</p>
@@ -85,8 +134,14 @@ const CardBody = ({
         <p className="body-duration">{duration}</p>
       </div>
       <p className="body-content">{text}</p>
-      <p className="body-content">{subText}</p>
-
+      {hasSubText && <p className="body-subtext">{subText}</p>}
+      {hasRibbon && (
+        <p class="ribbon">
+          <span class="text">
+            <strong class="bold">{ribbonText}</strong>
+          </span>
+        </p>
+      )}
       <Button text={buttonText} to={link} />
     </StyledBody>
   )

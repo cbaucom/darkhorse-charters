@@ -12,7 +12,7 @@ import {
 } from "../components"
 import { Container, Wrapper } from "../components/styles"
 import bassCharterImage from "../images/bass-pic.png"
-import groundCharterImage from "../images/ground-fish-pic.png"
+import groundCharterImage from "../images/darkhorse-groundfish.jpg"
 import tunaCharterImage from "../images/tuna-brothers.jpg"
 import privateCharterImage from "../images/darkhorse-fishing-tuna.jpg"
 
@@ -59,6 +59,9 @@ export default () => (
         </StyledLink>
         .
       </p>
+      <p className="center">
+        <em>25% deposit is due when booking.</em>
+      </p>
       <Wrapper>
         <Card
           image={groundCharterImage}
@@ -71,19 +74,15 @@ export default () => (
           subText={`Fishing species include cod, haddock, pollack, red fish, whiting, hake, ling, mackerel, herring, halibut, & dog fish. Go home with plenty of fresh fish, cleaned, filleted, and bagged ready to go for your dinner table. Limits of fish subject to change due to regulations`}
           buttonText={"Book Now"}
           link={"book-now"}
+          ribbonText={"Go home with plenty of fish to eat"}
         />
         <Card
           image={bassCharterImage}
           title={"Bass Charters"}
           time={"May - June"}
           duration={"5 - 8 hours"}
-          price={"$800 - $1000"}
-          text={`Fishing options: Depending on timing and season conditions, tactics include:
-        Light tackle casting for school bass
-        Medium tackle trolling for school and large bass
-        Medium tackle live bait and chunk fishing from a drift around the Merrimack River, Ipswich River, and Plum Island.
-
-        `}
+          price={"$800"}
+          text={`Fish for striped bass, bluefish, and mackerel in and around the Merrimack river and Ipswich bay.`}
           buttonText={"Book Now"}
           link={"book-now"}
         />
@@ -92,7 +91,7 @@ export default () => (
           title={"Commerical Tuna Charters"}
           time={"July 1- December"}
           duration={"12 - 24 hours"}
-          price={"$1600 - $2500"}
+          price={"$1500 - $2600"}
           text={`Come along on a commercial tuna fishing trip aboard the Dark Horse, we will be targeting Giant tuna (73” and up) using live bait and/or trolling gear. This is the ultimate experience to be part of. Catch the giant fish of a lifetime and come along for a serious fishing adventure. Travel to the fertile offshore waters of the gulf of Maine and see first hand what it is like to target a giant tuna.`}
           subText={`Giant tuna share the feeding grounds of whale, dolphins, sea birds, giant sunfish, sharks, and more. Sightings of all of these creatures are not uncommon. Your tuna trip will be one to remember.`}
           buttonText={"Book Now"}
@@ -102,8 +101,8 @@ export default () => (
           image={privateCharterImage}
           title={"Private Boat Hire"}
           time={"April - December"}
-          duration={"12 hours"}
-          price={"$2000"}
+          duration={"4 hour minimum"}
+          price={"$250/hour"}
           text={`Hire the F/V Dark Horse and it’s professional crew for a day adventure of your choice (ferrying service, day trips to local attractions, trip to beach, or design a trip to fit your needs)
         `}
           subText={`Servicing the following locations: Isles of Shoals, Portsmouth, Portland, Rockport, Ipswich, or Boston

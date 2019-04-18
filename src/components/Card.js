@@ -29,6 +29,7 @@ const Card = props => {
         buttonText={props.buttonText}
         link={props.link}
         subText={props.subText || ""}
+        ribbonText={props.ribbonText || ""}
       />
     </StyledCard>
   )
