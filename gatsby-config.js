@@ -32,6 +32,8 @@ module.exports = {
         big tuna`,
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
@@ -47,8 +49,6 @@ module.exports = {
         username: `fvdarkhorse`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-wordpress`,
       options: {
