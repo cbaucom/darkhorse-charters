@@ -179,7 +179,7 @@ const Instagram = () => (
                 key={node.id}
               >
                 <Overlay />
-                <Img fluid={pic} />
+                <Img fluid={pic} alt={title} />
                 <Content>
                   <Bottom>
                     <span>
