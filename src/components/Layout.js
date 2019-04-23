@@ -17,6 +17,7 @@ const Wrapper = styled.div`
   background: #fefefe;
   color: #333;
   margin: 0 auto;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -25,6 +26,7 @@ const Wrapper = styled.div`
 `
 
 const Main = styled.main`
+  flex-grow: 1;
   width: 100%;
 `
 
@@ -45,8 +47,8 @@ const Layout = ({ children }) => (
         <Wrapper>
           <Header siteTitle={data.site.siteMetadata.title} />
           <Main>{children}</Main>
+          <Footer />
         </Wrapper>
-        <Footer />
       </div>
     )}
   />

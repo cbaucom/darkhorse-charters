@@ -8,6 +8,7 @@ const FooterWrapper = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   text-align: center;
   padding: 2rem 0.5rem 1rem;
   font-size: 1.3em;
