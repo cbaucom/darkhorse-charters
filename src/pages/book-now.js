@@ -36,6 +36,10 @@ const SectionWrapper = styled.div`
   width: 100%;
   h4 {
     margin-bottom: 0.5rem;
+    a {
+      color: #0a5c9b;
+      font-size: 1.4rem;
+    }
   }
   p {
     font-size: 0.9rem;
@@ -47,7 +51,7 @@ const SectionWrapper = styled.div`
       height: 35px;
       width: 35px;
       margin: 0 10px 0 0;
-      color: #448ec7;
+      color: #0a5c9b;
     }
   }
 

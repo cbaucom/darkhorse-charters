@@ -9,7 +9,7 @@ const StyledButton = styled(Link)`
   font-family: inherit;
   background-color: transparent;
   color: #0a5c9b;
-  font-size: 1rem;
+  font-size: 1.25rem;
   transition: 0.25s;
   display: flex;
   justify-content: center;
@@ -63,7 +63,7 @@ const StyledBody = styled.div`
     font-size: 20px;
     position: relative;
     display: inline-block;
-    margin: 0.5rem -1.8rem 1rem;
+    margin: 0.5rem -1.8rem 1.5rem;
     text-align: center;
     /* background: #ffd72a; */
     background: #97c6ea;
@@ -101,6 +101,14 @@ const StyledBody = styled.div`
   }
 `
 
+const ImageWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  img {
+    max-height: 300px;
+  }
+`
+
 const Button = ({ to, text }) => {
   return (
     <StyledButton to={`/${to}`}>
@@ -119,9 +127,11 @@ const CardBody = ({
   link,
   buttonText,
   subText,
+  bodyImage,
   ribbonText,
 }) => {
   const hasSubText = subText.length === 0 ? false : true
+  const hasBodyImage = bodyImage.length === 0 ? false : true
   const hasRibbon = ribbonText.length === 0 ? false : true
   return (
     <StyledBody>
@@ -135,6 +145,11 @@ const CardBody = ({
       </div>
       <p className="body-content">{text}</p>
       {hasSubText && <p className="body-subtext">{subText}</p>}
+      {hasBodyImage && (
+        <ImageWrapper>
+          <img src={bodyImage} alt={bodyImage} />
+        </ImageWrapper>
+      )}
       {hasRibbon && (
         <p className="ribbon">
           <span className="text">

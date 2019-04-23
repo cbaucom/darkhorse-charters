@@ -13,8 +13,9 @@ import {
 import { Container, Wrapper } from "../components/styles"
 import bassCharterImage from "../images/bass-pic.png"
 import groundCharterImage from "../images/darkhorse-groundfish.jpg"
+import bucketsOFish from "../images/bucketsOFish.jpg"
 import tunaCharterImage from "../images/tuna-brothers.jpg"
-import privateCharterImage from "../images/darkhorse-fishing-tuna.jpg"
+import privateCharterImage from "../images/pushing-water.jpg"
 
 const StyledLink = styled(AnchorLink)`
   border: none;
@@ -74,6 +75,7 @@ export default () => (
           subText={`Fishing species include cod, haddock, pollack, red fish, whiting, hake, ling, mackerel, herring, halibut, & dog fish. Go home with plenty of fresh fish, cleaned, filleted, and bagged ready to go for your dinner table. Limits of fish subject to change due to regulations`}
           buttonText={"Book Now"}
           link={"book-now"}
+          bodyImage={bucketsOFish}
           ribbonText={"Go home with plenty of fish to eat"}
         />
         <Card

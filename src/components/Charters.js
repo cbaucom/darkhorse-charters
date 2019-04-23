@@ -2,9 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import Card from "./Card"
 import groundCharterImage from "../images/darkhorse-groundfish.jpg"
+import bucketsOFish from "../images/bucketsOFish.jpg"
 import bassCharterImage from "../images/bass-pic.png"
 import tunaCharterImage from "../images/big-tuna-fishing.jpg"
-import privateCharterImage from "../images/darkhorse-fishing-tuna.jpg"
+import privateCharterImage from "../images/pushing-water.jpg"
 
 const Wrapper = styled.section`
   width: 100%;
@@ -27,6 +28,7 @@ const Charters = () => {
         `}
         buttonText={"Find out more"}
         link={"charters"}
+        bodyImage={bucketsOFish}
         ribbonText={"Go home with plenty of fish to eat"}
       />
       <Card

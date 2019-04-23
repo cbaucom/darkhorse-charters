@@ -7,8 +7,8 @@ const StyledCardHeader = styled.header`
   width: 100%;
   background-size: cover;
   background-position: center;
-  @media (min-width: 600px) {
-    width: 400px;
+  @media (min-width: 768px) {
+    width: 75%;
     min-height: 100%;
     object-fit: cover;
   }
