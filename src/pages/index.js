@@ -61,7 +61,6 @@ const StyledLink = styled(Link)`
 `
 
 const GoFishingContainer = styled.section`
-  /* background: radial-gradient(ellipse at center, #1f3b5b 0%, #111 80%); */
   background: url(${bigFish}) no-repeat center/100%;
   background-size: cover;
   display: flex;

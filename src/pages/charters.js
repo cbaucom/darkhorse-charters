@@ -88,7 +88,7 @@ export default () => (
         />
         <Card
           image={tunaCharterImage}
-          title={"Commerical Tuna Charters"}
+          title={"Commercial Tuna Charters"}
           time={"July 1- December"}
           duration={"12 - 24 hours"}
           price={"$1500 - $2600"}

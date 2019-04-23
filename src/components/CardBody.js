@@ -136,9 +136,9 @@ const CardBody = ({
       <p className="body-content">{text}</p>
       {hasSubText && <p className="body-subtext">{subText}</p>}
       {hasRibbon && (
-        <p class="ribbon">
-          <span class="text">
-            <strong class="bold">{ribbonText}</strong>
+        <p className="ribbon">
+          <span className="text">
+            <strong className="bold">{ribbonText}</strong>
           </span>
         </p>
       )}

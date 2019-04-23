@@ -131,7 +131,7 @@ const Header = () => (
             <OutboundLink
               className="facebook"
               title="facebook"
-              href="https://facebook.com/fvdarkhorse"
+              href="https://www.facebook.com/darkhorsefish/"
               target="blank"
             >
               <FaFacebook />
