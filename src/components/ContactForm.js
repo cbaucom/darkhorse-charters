@@ -92,6 +92,7 @@ class ContactForm extends React.Component {
             <input
               type="text"
               name="name"
+              autoComplete="name"
               value={this.state.name}
               onChange={this.handleChange}
               required
@@ -104,6 +105,7 @@ class ContactForm extends React.Component {
             <input
               type="email"
               name="email"
+              autoComplete="email"
               value={this.state.email}
               onChange={this.handleChange}
               required
@@ -116,6 +118,7 @@ class ContactForm extends React.Component {
             <input
               type="tel"
               name="phone"
+              autoComplete="tel"
               value={this.state.phone}
               onChange={this.handleChange}
               required
