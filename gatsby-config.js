@@ -4,6 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://darkhorsecharters.com`,
     title: `Dark Horse Fishing Charters Newburyport`,
     description: `Top Fishing Charters Newburyport, Massachusetts, offering fishing charters in and around Newburyport, Massachusetts for 1 to 6 people. FV Dark Horse fishes for giant bluefin tuna, cod, haddock, pollack, red fish, whiting, hake, ling, mackerel, herring, halibut, & dog fish.`,
     author: `Chris Baucom`,
@@ -32,6 +33,7 @@ module.exports = {
         big tuna`,
   },
   plugins: [
+    `gatsby-plugin-advanced-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
