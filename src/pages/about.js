@@ -101,7 +101,7 @@ const OurVessel = () => (
           waters in and around Ipswich bay since childhood, and have owned 3
           boats prior to the Dark Horse. Most recently owning the Betsy G a 37’
           Repco lobster boat which they commercially fished for Tuna for the
-          last 7 years. Together they have caught hundreds of giant Bluefin
+          last 7 years. Together they have caught many giant Bluefin
           Tuna.{" "}
         </p>
         <p>
