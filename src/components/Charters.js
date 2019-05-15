@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Card from "./Card"
 import groundCharterImage from "../images/darkhorse-groundfish.jpg"
 import bucketsOFish from "../images/bucketsOFish.jpg"
-import bassCharterImage from "../images/bass-pic.png"
+import customCharterImage from "../images/bass-pic.png"
 import tunaCharterImage from "../images/big-tuna-fishing.jpg"
 import privateCharterImage from "../images/pushing-water.jpg"
 
@@ -32,11 +32,11 @@ const Charters = () => {
         ribbonText={"Go home with plenty of fish to eat"}
       />
       <Card
-        image={bassCharterImage}
-        title={"Bass Charters"}
+        image={customCharterImage}
+        title={"Custom Charters"}
         time={"May - June"}
         duration={"5 - 8 hours"}
-        price={"$800"}
+        price={"starting at $800"}
         text={`Fish for striped bass, bluefish, and mackerel in and around the Merrimack river and Ipswich bay.`}
         buttonText={"Find out more"}
         link={"charters"}

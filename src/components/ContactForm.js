@@ -167,7 +167,7 @@ class ContactForm extends React.Component {
               <option value="Commercial Tuna Charter">
                 Commercial Tuna Charter
               </option>
-              <option value="Bass Charter">Bass Charter</option>
+              <option value="Custom Charter">Custom Charter</option>
               <option value="Ground Fishing Charter">
                 Ground Fishing Charter
               </option>
