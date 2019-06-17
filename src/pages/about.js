@@ -74,7 +74,7 @@ const OurVessel = () => (
           </li>
           <li>
             Inside our large roomy cabin is a full sized wrap around bench that
-            doubles as a day bunk, satellite TV, AM-FM stero, stove, barbecue,
+            doubles as a day bunk, satellite TV, AM-FM stereo, stove, barbecue,
             fully enclosed head, stand up shower with hot/cold freshwater, 4
             full sized bunks, 12v/110v systems
           </li>
@@ -101,8 +101,7 @@ const OurVessel = () => (
           waters in and around Ipswich bay since childhood, and have owned 3
           boats prior to the Dark Horse. Most recently owning the Betsy G a 37’
           Repco lobster boat which they commercially fished for Tuna for the
-          last 7 years. Together they have caught many giant Bluefin
-          Tuna.{" "}
+          last 7 years. Together they have caught many giant Bluefin Tuna.{" "}
         </p>
         <p>
           Will is a also a turbine mechanic/hydro operator by trade and keeps
