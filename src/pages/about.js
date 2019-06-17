@@ -5,7 +5,6 @@ import { Layout, SEO, HeroImage } from "../components"
 import { Container } from "../components/styles"
 import TunaBros from "../images/tuna-brothers-bw.jpg"
 import PushingWater from "../images/pushing-water.jpg"
-import FlagDay from "../images/darkhorse-flagday.jpg"
 
 const About = styled.section`
   text-align: center;
