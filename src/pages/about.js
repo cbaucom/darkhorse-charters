@@ -5,6 +5,7 @@ import { Layout, SEO, HeroImage } from "../components"
 import { Container } from "../components/styles"
 import TunaBros from "../images/tuna-brothers-bw.jpg"
 import PushingWater from "../images/pushing-water.jpg"
+import FlagDay from "../images/darkhorse-flagday.jpg"
 
 const About = styled.section`
   text-align: center;
@@ -35,9 +36,6 @@ const OurVessel = () => (
           The Dark Horse is a brand new state-of-the-art fishing machine
           launched in September 2018. She was constructed at HnH Marine in
           Stueben Maine, over a period of 2 years.
-          {/* We built The Dark Horse with culmination of years of fishing experience and knowledge
-            working with and owning many different boats, to create the ultimate
-            fishing machine. */}
         </p>
         <p>
           She was constructed off of the standard Osmond Beal 42’ hull, which
