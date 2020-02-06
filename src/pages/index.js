@@ -84,7 +84,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <HeroImage imgsrc="darkhorse-fishing-tuna-short.jpg" />
     <CTAContainer>
-      <h2>Now accepting reservations for 2019 charters!</h2>
+      <h2>Now accepting reservations for 2020 charters!</h2>
       <StyledLink to="/book-now">Book Now</StyledLink>
     </CTAContainer>
     <Container>
