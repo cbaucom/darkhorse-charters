@@ -23,18 +23,15 @@ const GramWrapper = styled.div`
 
 const Grid = styled.div`
   margin: 1rem 20px 5rem 20px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   width: 100%;
-  /* @media (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
   }
-  @media (max-width: 480px) {
-    grid-template-columns: 1fr;
-  } */
+  @media (min-width: 1000px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 `
 
 const Item = styled.div`
@@ -68,7 +65,7 @@ const WordpressMedia = () => (
     render={data => (
       <GramWrapper>
         <Grid>
-          {data.wordpress.edges.map(({ node }) => {
+          {data.wordpress.edges.sort().reverse().map(({ node }) => {
             const pic = node.localFile.childImageSharp.fluid
             return (
               <Item key={node.id}>
