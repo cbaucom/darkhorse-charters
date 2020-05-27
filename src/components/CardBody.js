@@ -10,6 +10,7 @@ const StyledButton = styled(Link)`
   background-color: transparent;
   color: #0a5c9b;
   font-size: 1.25rem;
+  padding: 1rem;
   transition: 0.25s;
   display: flex;
   justify-content: center;
