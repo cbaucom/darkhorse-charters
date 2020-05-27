@@ -3,9 +3,10 @@ import styled from "styled-components"
 import Card from "./Card"
 import groundCharterImage from "../images/darkhorse-groundfish.jpg"
 import bucketsOFish from "../images/bucketsOFish.jpg"
-import customCharterImage from "../images/bass-pic.png"
+import customCharterImage from "../images/custom-charter.jpeg"
 import tunaCharterImage from "../images/big-tuna-fishing.jpg"
-import privateCharterImage from "../images/pushing-water.jpg"
+import privateCharterImage from "../images/private-boat-hire.jpg"
+import privateCharterImage2 from "../images/pushing-water.jpg"
 
 const Wrapper = styled.section`
   width: 100%;
@@ -42,13 +43,14 @@ const Charters = () => {
         link={"charters"}
       />
       <Card
-        image={privateCharterImage}
+        image={privateCharterImage2}
         title={"Private Boat Hire"}
         time={"April - Decemeber"}
         duration={"4 hour minimum"}
         price={"$250/hour"}
         text={`Hire the F/V Dark Horse and it’s professional crew for a day adventure of your choice (ferrying service, day trips to local attractions, trip to beach, or design a trip to fit your needs)
         `}
+        bodyImage={privateCharterImage}
         buttonText={"Find out more"}
         link={"charters"}
       />

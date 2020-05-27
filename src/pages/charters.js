@@ -11,11 +11,12 @@ import {
   Card,
 } from "../components"
 import { Container, Wrapper } from "../components/styles"
-import customCharterImage from "../images/bass-pic.png"
+import customCharterImage from "../images/custom-charter.jpeg"
 import groundCharterImage from "../images/darkhorse-groundfish.jpg"
 import bucketsOFish from "../images/bucketsOFish.jpg"
 import tunaCharterImage from "../images/tuna-brothers.jpg"
-import privateCharterImage from "../images/pushing-water.jpg"
+import privateCharterImage from "../images/private-boat-hire.jpg"
+import privateCharterImage2 from "../images/pushing-water.jpg"
 
 const StyledLink = styled(AnchorLink)`
   border: none;
@@ -100,7 +101,7 @@ export default () => (
           link={"book-now"}
         />
         <Card
-          image={privateCharterImage}
+          image={privateCharterImage2}
           title={"Private Boat Hire"}
           time={"April - December"}
           duration={"4 hour minimum"}
@@ -109,6 +110,7 @@ export default () => (
         `}
           subText={`Servicing the following locations: Isles of Shoals, Portsmouth, Portland, Rockport, Ipswich, or Boston
           `}
+          bodyImage={privateCharterImage}
           buttonText={"Book Now"}
           link={"book-now"}
         />
