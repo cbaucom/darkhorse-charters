@@ -18,6 +18,7 @@ class ContactForm extends React.Component {
       phone: "",
       people: "1",
       charter: "Ground Fishing Charter",
+      referral: "Google search",
       message: "",
       requestedDate: new Date(),
       calendarFocused: false,
@@ -172,6 +173,27 @@ class ContactForm extends React.Component {
                 Ground Fishing Charter
               </option>
               <option value="Private Boat Hire">Private Boat Hire</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label className="same-line">
+            How did you hear about us?{" "}
+            <select
+              name="referral"
+              value={this.state.referral}
+              onChange={this.handleChange}
+              required
+            >
+              <option value="Google search">
+                Google search
+              </option>
+              <option value="Facebook">Facebook</option>
+              <option value="Fishingbooker.com">
+                Fishingbooker.com
+              </option>
+              <option value="Northshore Magazine">Northshore Magazine</option>
+              <option value="I've seen your boat on the water">I've seen your boat on the water</option>
             </select>
           </label>
         </p>
