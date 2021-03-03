@@ -104,7 +104,7 @@ const Payments = styled.section`
   }
 `
 
-export default () => {
+export default function Footer() {
   return (
     <FooterWrapper>
       <div className="row">

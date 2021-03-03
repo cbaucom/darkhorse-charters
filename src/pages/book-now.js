@@ -122,7 +122,8 @@ const FormWrapper = styled.div`
   }
 `
 
-export default () => (
+export default function BookNow() {
+  return (
   <Layout>
     <SEO title="Book Now | F/V Dark Horse" />
     <HeroImage imgsrc="darkhorse-fishing-tuna-short.jpg" />
@@ -168,4 +169,4 @@ export default () => (
       </FormWrapper>
     </Container>
   </Layout>
-)
+)}

@@ -44,7 +44,7 @@ const StyledLink = styled(Link)`
       inset 0 2px 1px RGBA(68, 142, 199, 1);
   }
 `
-export default props => {
+export default function ThankYou(props) {
   if (typeof window !== "undefined") {
     return (
       <Layout>
