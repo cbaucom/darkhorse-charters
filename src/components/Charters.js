@@ -45,7 +45,7 @@ const Charters = () => {
       <Card
         image={privateCharterImage2}
         title={"Private Boat Hire"}
-        time={"April - Decemeber"}
+        time={"April - December"}
         duration={"4 hour minimum"}
         price={"$250/hour"}
         text={`Hire the F/V Dark Horse and it’s professional crew for a day adventure of your choice (ferrying service, day trips to local attractions, trip to beach, or design a trip to fit your needs)
