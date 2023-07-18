@@ -144,7 +144,7 @@ class ContactForm extends React.Component {
             <select
               name="people"
               value={this.state.people}
-              onBlur={(e) => e.preventDefault() }
+              onBlur={(e) => e.preventDefault()}
               onChange={this.handleChange}
               required
             >
@@ -163,7 +163,7 @@ class ContactForm extends React.Component {
             <select
               name="charter"
               value={this.state.charter}
-              onBlur={(e) => e.preventDefault() }
+              onBlur={(e) => e.preventDefault()}
               onChange={this.handleChange}
               required
             >
@@ -184,7 +184,7 @@ class ContactForm extends React.Component {
             <select
               name="referral"
               value={this.state.referral}
-              onBlur={(e) => e.preventDefault() }
+              onBlur={(e) => e.preventDefault()}
               onChange={this.handleChange}
               required
             >
@@ -206,6 +206,7 @@ class ContactForm extends React.Component {
             <textarea
               id="message"
               name="message"
+              rows="6"
               value={this.state.message}
               onChange={this.handleChange}
             />

@@ -71,7 +71,7 @@ export default function Charters() {
             title={"Ground Fish Charters"}
             time={"Starting April 15th"}
             duration={"7 - 9 hours"}
-            price={"$1200"}
+            price={"$1400"}
             text={`Off shore fishing the Jeffery’s ledge, and Stellwagen Bank. Sightings of whales, dolphins, porpoise and other sea creatures are not uncommon
           `}
             subText={`Fishing species include cod, haddock, pollack, red fish, whiting, hake, ling, mackerel, herring, halibut, & dog fish. Go home with plenty of fresh fish, cleaned, filleted, and bagged ready to go for your dinner table. Limits of fish subject to change due to regulations`}

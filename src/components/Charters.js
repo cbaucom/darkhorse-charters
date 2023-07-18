@@ -24,7 +24,7 @@ const Charters = () => {
         title={"Ground Fish Charters"}
         time={"Starting April 15th"}
         duration={"7 - 9 hours"}
-        price={"$1200"}
+        price={"$1400"}
         text={`Off shore fishing the Jeffery’s ledge, and Stellwagen Bank. Sightings of whales, dolphins, porpoise and other sea creatures are not uncommon
         `}
         buttonText={"Find out more"}
